@@ -1,59 +1,64 @@
 {
-    "name": "rohithmeethal/lern",
-    "description": "LERN (Laravel Exception Recorder and Notifier) is a Laravel 5 package that will record exceptions into a database and will notify you via Email, Pushover or Slack.",
-    "keywords": [
-        "laravel",
-        "exceptions",
-        "monolog",
-        "pushover",
-        "slack",
-        "LERN",
-        "tylercd100"
-    ],
-    "type": "laravel-package",
-    "homepage": "https://github.com/tylercd100/lern",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Tyler Arbon",
-            "email": "tylercd100@gmail.com"
-        }
-    ],
-    "autoload":{
-        "psr-4":{
-            "Tylercd100\\LERN\\":"src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tylercd100\\LERN\\Tests\\": "tests/"
-        }
-    },
-    "minimum-stability": "stable",
-    "require": {
-        "php": "^7.2",
-        "illuminate/support": "^6.0",
-        "monolog/monolog": "^1.22",
-        "tylercd100/laravel-notify": "^3.0"
-    },
-    "require-dev": {
-        "orchestra/testbench": "^4.0",
-        "phpunit/phpunit": "^8.0",
-        "doctrine/dbal": "~2.3"
-    },
-    "suggest": {
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Tylercd100\\LERN\\LERNServiceProvider"
-            ],
-            "aliases": {
-                "LERN": "Tylercd100\\LERN\\Facades\\LERN"
-            }
-        }
-    },
-    "repositories": [
-
-    ]
+  "name": "rohithmeethal/lern",
+  "description": "LERN (Laravel Exception Recorder and Notifier) is a Laravel 5 package that will record exceptions into a database and will notify you via Email, Pushover or Slack.",
+  "keywords": [
+    "laravel",
+    "exceptions",
+    "monolog",
+    "pushover",
+    "slack",
+    "LERN",
+    "tylercd100"
+  ],
+  "type": "laravel-package",
+  "homepage": "https://github.com/tylercd100/lern",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tyler Arbon",
+      "email": "tylercd100@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Tylercd100\\LERN\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tylercd100\\LERN\\Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^7.2",
+    "illuminate/support": "^7.0",
+    "monolog/monolog": "^2.0",
+    "rohithmeethal/laravel-notify": "^4.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^4.0",
+    "phpunit/phpunit": "^8.0",
+    "doctrine/dbal": "~2.3"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/rohithmeethal/laravel-notify.git"
+    }
+  ],
+  "suggest": {
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Tylercd100\\LERN\\LERNServiceProvider"
+      ],
+      "aliases": {
+        "LERN": "Tylercd100\\LERN\\Facades\\LERN"
+      }
+    }
+  },
+  "repositories": [
+  ]
 }
