@@ -1,5 +1,5 @@
 {
-    "name": "tylercd100/lern",
+    "name": "rohithmeethal/lern",
     "description": "LERN (Laravel Exception Recorder and Notifier) is a Laravel 5 package that will record exceptions into a database and will notify you via Email, Pushover or Slack.",
     "keywords": [
         "laravel",
